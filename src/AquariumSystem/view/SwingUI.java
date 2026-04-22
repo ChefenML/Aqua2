@@ -3,7 +3,7 @@ package AquariumSystem.view;
 
 import AquariumSystem.controller.AquariumController;
 import AquariumSystem.interfaces.Fish;
-import AquariumSystem.model.WaterQuality2;
+import AquariumSystem.model.WaterQuality;
 import AquariumSystem.simpleaquarium.SimpleFish;
 
 import javax.swing.*;
@@ -24,7 +24,7 @@ public class SwingUI {
         createUI();
     }
 
-    private void createUI() {
+    public void createUI() {
         frame = new JFrame("Dianas Akvarium");
         frame.setSize(600, 450);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -105,14 +105,14 @@ public class SwingUI {
             if (note == null) return;
 
             // Dropdown til valg af vandkvalitet
-            WaterQuality2 quality = (WaterQuality2) JOptionPane.showInputDialog(
+            WaterQuality quality = (WaterQuality) JOptionPane.showInputDialog(
                     frame,
                     "Vælg vandkvalitet:",
                     "Vandkvalitet",
                     JOptionPane.QUESTION_MESSAGE,
                     null,
-                    WaterQuality2.values(), // enum bruges direkte
-                    WaterQuality2.GOOD      // default
+                    WaterQuality.values(), // enum bruges direkte
+                    WaterQuality.GOOD      // default
             );
 
             if (quality != null) {
