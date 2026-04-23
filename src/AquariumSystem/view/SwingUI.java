@@ -203,12 +203,15 @@ public class SwingUI {
                 int[] yPoints = {y, y + 15, y + 30};
                 g.fillPolygon(xPoints, yPoints, 3);
 
+                // Fine
+                g.fillArc(x-10,y-10,55,55,25,40);
+
                 // Øje
                 g.setColor(Color.BLACK);
                 g.fillOval(x + 10, y + 10, 5, 5);
 
                 // Navn
-                g.drawString(fish.getName(), x, y - 5);
+                g.drawString(fish.getName(), x, y - 15);
 
                 x += 120; // næste fisk
             }

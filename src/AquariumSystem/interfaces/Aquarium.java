@@ -1,7 +1,6 @@
 package AquariumSystem.interfaces;
 
 import AquariumSystem.model.WaterQuality;
-import AquariumSystem.model.WaterQuality2;
 
 import java.time.LocalDateTime;
 

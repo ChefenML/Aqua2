@@ -3,7 +3,6 @@ package AquariumSystem.view;
 import AquariumSystem.controller.AquariumController;
 import AquariumSystem.interfaces.Fish;
 import AquariumSystem.model.WaterQuality;
-import AquariumSystem.model.WaterQuality2;
 import AquariumSystem.simpleaquarium.SimpleFish;
 
 import java.util.List;
